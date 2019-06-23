@@ -45,66 +45,40 @@ Features
 
 Index
 -----
-<pre>
-<a href="#features"
->> LibreWolf: Features ............................................................... </a>
-<a href="#download"
->> LibreWolf: Download ............................................................... </a>
-<a href="#capture"
->> LibreWolf: Capture ................................................................ </a>
-<a href="#LibreWolf-addons"
->> Addons: LibreWolf Addons .......................................................... </a>
-<a href="#recommended-addons"
->> Addons: Recommended Addons ....................................................... </a>
-<a href="#recommended-addons-settings"
->> Addons: Recommended Addons Settings .............................................. </a>
-<a href="#reviewing-extensions-code"
->> Addons: Reviewing Addons Source Code ............................................. </a>
-<a href="#other-addons"
->> Addons: Other Useful Addons Listing .............................................. </a>
-<a href="#installation-instructions"
->> Wiki: Installation Instructions .................................................. </a>
-<a href="#extensions-firewall"
->> Wiki: Extensions Network Firewall ................................................ </a>
-<a href="#ijwy-i-just-want-you-to-shut-up"
->> Wiki: IJWY (I Just Want You To Shut Up) .......................................... </a>
-<a href="#edit-locked-settings"
->> Wiki: Edit Locked Settings ....................................................... </a>
-<a href="#settings-index"
->> Wiki: Settings Index ............................................................. </a>
-<a href="#cookies-settings"
->> Wiki: Cookies Settings ........................................................... </a>
-<a href="#tracking-protection"
->> Wiki: Tracking Protection ........................................................ </a>
-<a href="#comparing-changes-and-updates"
->> Wiki: Comparing Changes And Updates .............................................. </a>
-<a href="#documentation"
->> Wiki: Documentation .............................................................. </a>
-<a href="#LibreWolf-dark-theme"
->> Wiki: LibreWolf Dark Theme ........................................................ </a>
-<a href="#tuning-LibreWolf"
->> Wiki: Tuning LibreWolf ............................................................ </a>
-<a href="#LibreWolf-esr"
->> Wiki: LibreWolf ESR ............................................................... </a>
-<a href="#tor-compatibility"
->> Wiki: Tor Compatibility .......................................................... </a>
-<a href="#drm-compatibility"
->> Wiki: DRM Compatibility .......................................................... </a>
-<a href="#building-and-packaging"
->> Wiki: Building And Packaging ..................................................... </a>
-<a href="#browser-tests---securityfingerprint"
->> Browser Tests: Security/Fingerprint .............................................. </a>
-<a href="#browser-tests---performances"
->> Browser Tests: Performance ....................................................... </a>
-<a href="#browser-tests---dnsvpnproxy-leak"
->> Browser Tests: DNS/VPN/Proxy Leak ................................................ </a>
-<a href="#LibreWolf-roadmap"
->> Infos: LibreWolf Roadmap .......................................................... </a>
-<a href="#changelog"
->> Infos: Changelog ................................................................. </a>
-<a href="#about"
->> Infos: About ..................................................................... </a>
-</pre>
+- LibreWolf
+    - [Features](#features)
+    - [Download](#download)
+    - [Capture](#capture)
+- Addons
+    - [LibreWolf Addons](#LibreWolf-addons)
+    - [Recommended Addons](#recommended-addons)
+    - [Recommended Addons Settings](#recommended-addons-settings)
+    - [Reviewing Addons Source Code](#reviewing-extensions-code)
+    - [Other Useful Addons Listing](#other-addons)
+- Wiki
+    - [Installation Instructions](#installation-instructions)
+    - [Extensions Network Firewall](#extensions-firewall)
+    - [IJWY (I Just Want You To Shut Up)](#ijwy-i-just-want-you-to-shut-up)
+    - [Edit Locked Settings](#edit-locked-settings)
+    - [Settings Index](#settings-index)
+    - [Cookies Settings](#cookies-settings)
+    - [Tracking Protection](#tracking-protection)
+    - [Comparing Changes And Updates](#comparing-changes-and-updates)
+    - [Documentation](#documentation)
+    - [LibreWolf Dark Theme](#LibreWolf-dark-theme)
+    - [Tuning LibreWolf](#tuning-LibreWolf)
+    - [LibreWolf ESR](#LibreWolf-esr)
+    - [Tor Compatibility](#tor-compatibility)
+    - [DRM Compatibility](#drm-compatibility)
+    - [Building And Packaging](#building-and-packaging)
+- Browser Tests
+    - [Security/Fingerprint](#browser-tests---securityfingerprint)
+    - [Performance](#browser-tests---performances)
+    - [DNS/VPN/Proxy Leak](#browser-tests---dnsvpnproxy-leak)
+- Infos
+    - [LibreWolf Roadmap](#LibreWolf-roadmap)
+    - [Changelog](#changelog)
+    - [About](#about)
 
 Download
 -------
