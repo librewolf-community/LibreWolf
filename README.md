@@ -1,8 +1,8 @@
-# LibreWolf: Browse With Freedom
-
 <p align="center">
     <a href="https://gitlab.com/librewolf-community/librewolf/"><img width="727" src="./branding/logo_2/Logo.svg.png"></a>
 </p>
+
+# LibreWolf: Browse With Freedom
 
 <p align="center">
     <a href="https://gitter.im/librewolf-community/librewolf?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge" target="_blank"><img src="https://badges.gitter.im/librewolf-community/librewolf.svg"></a>
