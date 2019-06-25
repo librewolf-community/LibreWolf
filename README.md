@@ -13,7 +13,6 @@
     <a href="https://gitlab.com/librewolf-community/librewolf/merge_requests"><img src="https://img.shields.io/badge/PR-0-green.svg"></a>
     <a href="https://gitlab.com/librewolf-community/librewolf/issues?scope=all&utf8=%E2%9C%93&state=closed"><img src="https://img.shields.io/badge/Solved%20Issues-3-green.svg"></a>
     <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank"><img src="https://img.shields.io/badge/License-Mozilla--MPL2-blue.svg"></a>
-    <a href="https://www.mozilla.org/en-US/MPL/" target="_blank"><img src="https://badges.frapsoft.com/os/v2/open-source.png?v=103"></a>
 </p>
 
 This project is an independent fork of Firefox, with the primary goals of privacy security and user freedom. It is the community run successor to [LibreFox](https://github.com/intika/Librefox)
