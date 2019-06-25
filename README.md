@@ -11,7 +11,7 @@
     <a href="https://gitlab.com/librewolf-community/librewolf/commits/master"><img alt="pipeline status" src="https://gitlab.com/librewolf-community/librewolf/badges/master/pipeline.svg" /></a>
     <a href="https://github.com/LibreWolf-Browser/LibreWolf/pulls"><img src="https://img.shields.io/badge/PR-0-green.svg"></a>
     <a href="https://github.com/LibreWolf-Browser/LibreWolf/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/badge/Solved%20Issues-3-green.svg"></a>
-    <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank"><img src="https://img.shields.io/badge/License-Mozilla--MLP2-blue.svg"></a>
+    <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank"><img src="https://img.shields.io/badge/License-Mozilla--MPL2-blue.svg"></a>
     <a href="https://www.mozilla.org/en-US/MPL/" target="_blank"><img src="https://badges.frapsoft.com/os/v2/open-source.png?v=103"></a>
 </p>
 
@@ -164,7 +164,7 @@ Recommended extensions code have been reviewed for potential unwanted behaviour.
 ## Installation Instructions
 
 **Notice:** in the current state of the project LibreWolf is a set of configuration files for Firefox (awaiting a correct build of the project), therefore if you already have a Firefox profile, that profile will be used and temporary files will be removed (cookies and current session), make sure to backup your current Firefox's profile before using LibreWolf.
-Using LibreWolf simultaneously with Firefox is possilbe through a different profile you can follow [this wiki](https://www.ghacks.net/2008/05/29/run-multiple-firefox-profiles-simultaneously/) to do so. **[Future](https://github.com/LibreWolf-Browser/LibreWolf/issues/55) LibreWolf version** will be independent from Firefox and therefore will solve this issue.
+Using LibreWolf simultaneously with Firefox is possible through a different profile you can follow [this wiki](https://www.ghacks.net/2008/05/29/run-multiple-firefox-profiles-simultaneously/) to do so. **[Future](https://github.com/LibreWolf-Browser/LibreWolf/issues/55) LibreWolf version** will be independent from Firefox and therefore will solve this issue.
 
 ### Windows
 
@@ -371,7 +371,7 @@ LibreWolf provides a classic dark theme extension ([LibreWolf Dark Theme](https:
 
 ### Restart Button
 
-One simple solution is to bookmark `about:restartrequired` or `about:profiles` ... when restart is needed open that page and click "normal restart". You can even go further and add the bookmarks links to your icons bar and rename the link to an empty text (you will then have a direct icon to `about:profiles` and a 2 clicks restart).
+One simple solution is to bookmark `about:restartrequired` or `about:profiles`. When restart is needed open that page and click "normal restart". You can even go further and add the bookmarks links to your icons bar and rename the link to an empty text (you will then have a direct icon to `about:profiles` and a 2 clicks restart).
 
 ![capture](https://user-images.githubusercontent.com/6892180/48963055-bd914000-ef82-11e8-8ea4-a58e56f5c4a4.png)
 ...
