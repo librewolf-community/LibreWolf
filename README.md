@@ -5,6 +5,7 @@
 </p>
 
 <p align="center">
+    <a href="https://gitter.im/librewolf-community/librewolf?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge" target="_blank"><img src="https://badges.gitter.im/librewolf-community/librewolf.svg"></a>
     <a href="https://gitlab.com/librewolf-community/librewolf/releases" target="_blank"><img src="https://img.shields.io/badge/Download-%20LibreWolf-green.svg"> </a>
     <a href="https://gitlab.com/librewolf-community/librewolf/releases"><img src="https://img.shields.io/badge/Version-0.0.1-green.svg"></a>
     <a href="https://gitlab.com/librewolf-community/librewolf/commits/master"><img src="https://img.shields.io/badge/Maintained-Yes-green.svg"></a>
