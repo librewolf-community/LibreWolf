@@ -1,16 +1,16 @@
 # LibreWolf: Browse With Freedom
 
 <p align="center">
-    <a href="https://github.com/LibreWolf-Browser/LibreWolf/"><img width="727" src="./branding/logo_2/Logo.svg.png"></a>
+    <a href="https://gitlab.com/librewolf-community/librewolf/"><img width="727" src="./branding/logo_2/Logo.svg.png"></a>
 </p>
 
 <p align="center">
-    <a href="https://github.com/LibreWolf-Browser/LibreWolf/releases" target="_blank"><img src="https://img.shields.io/badge/Download-%20LibreWolf-green.svg"> </a>
-    <a href="https://github.com/LibreWolf-Browser/LibreWolf/releases"><img src="https://img.shields.io/badge/Version-0.0.1-green.svg"></a>
-    <a href="https://github.com/LibreWolf-Browser/LibreWolf/commits/master"><img src="https://img.shields.io/badge/Maintained-Yes-green.svg"></a>
+    <a href="https://gitlab.com/librewolf-community/librewolf/releases" target="_blank"><img src="https://img.shields.io/badge/Download-%20LibreWolf-green.svg"> </a>
+    <a href="https://gitlab.com/librewolf-community/librewolf/releases"><img src="https://img.shields.io/badge/Version-0.0.1-green.svg"></a>
+    <a href="https://gitlab.com/librewolf-community/librewolf/commits/master"><img src="https://img.shields.io/badge/Maintained-Yes-green.svg"></a>
     <a href="https://gitlab.com/librewolf-community/librewolf/commits/master"><img alt="pipeline status" src="https://gitlab.com/librewolf-community/librewolf/badges/master/pipeline.svg" /></a>
-    <a href="https://github.com/LibreWolf-Browser/LibreWolf/pulls"><img src="https://img.shields.io/badge/PR-0-green.svg"></a>
-    <a href="https://github.com/LibreWolf-Browser/LibreWolf/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/badge/Solved%20Issues-3-green.svg"></a>
+    <a href="https://gitlab.com/librewolf-community/librewolf/merge_requests"><img src="https://img.shields.io/badge/PR-0-green.svg"></a>
+    <a href="https://gitlab.com/librewolf-community/librewolf/issues?scope=all&utf8=%E2%9C%93&state=closed"><img src="https://img.shields.io/badge/Solved%20Issues-3-green.svg"></a>
     <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank"><img src="https://img.shields.io/badge/License-Mozilla--MPL2-blue.svg"></a>
     <a href="https://www.mozilla.org/en-US/MPL/" target="_blank"><img src="https://badges.frapsoft.com/os/v2/open-source.png?v=103"></a>
 </p>
@@ -130,10 +130,6 @@ Recommended addons are not bundled and need to be installed manually
   - Privacy / Font / Enable protection for font and glyph fingerprinting
 ```
 
-### Reviewing Extensions Code
-
-Recommended extensions code have been reviewed for potential unwanted behaviour... reviewed version are available under [extensions](https://github.com/LibreWolf-Browser/LibreWolf/tree/master/extensions) directory.
-
 ### Other Addons
 
 #### Privacy addons
@@ -164,19 +160,19 @@ Recommended extensions code have been reviewed for potential unwanted behaviour.
 ## Installation Instructions
 
 **Notice:** in the current state of the project LibreWolf is a set of configuration files for Firefox (awaiting a correct build of the project), therefore if you already have a Firefox profile, that profile will be used and temporary files will be removed (cookies and current session), make sure to backup your current Firefox's profile before using LibreWolf.
-Using LibreWolf simultaneously with Firefox is possible through a different profile you can follow [this wiki](https://www.ghacks.net/2008/05/29/run-multiple-firefox-profiles-simultaneously/) to do so. **[Future](https://github.com/LibreWolf-Browser/LibreWolf/issues/55) LibreWolf version** will be independent from Firefox and therefore will solve this issue.
+Using LibreWolf simultaneously with Firefox is possible through a different profile you can follow [this wiki](https://www.ghacks.net/2008/05/29/run-multiple-firefox-profiles-simultaneously/) to do so.
 
 ### Windows
 
 - Download and install the last version of Firefox [x32 release](https://download-installer.cdn.mozilla.net/pub/firefox/releases/64.0/win32/en-US/Firefox%20Setup%2064.0.exe) or [x64 release](https://download-installer.cdn.mozilla.net/pub/firefox/releases/64.0/win64/en-US/Firefox%20Setup%2064.0.exe)
-- Download [LibreWolf](https://github.com/LibreWolf-Browser/LibreWolf/releases/download/LibreWolf-v2.1-v64.0.0/LibreWolf-2.1-Firefox-Windows-64.0.0.zip) zip file and extract it
+- Download LibreWolf zip file and extract it
 - Locate Firefox's installation directory (where the firefox.exe is located) `C:\Program Files\Mozilla Firefox\` or `C:\Program Files (x86)\Mozilla Firefox\` or `Tor-Install-Directory\Browser\`
 - Copy the extracted LibreWolf files to the install directory
 
 ### Linux
 
 - Download and extract the last version of Firefox [x32 release](https://download-installer.cdn.mozilla.net/pub/firefox/releases/64.0/linux-i686/en-US/firefox-64.0.tar.bz2) or [x64 release](https://download-installer.cdn.mozilla.net/pub/firefox/releases/64.0/linux-x86_64/en-US/firefox-64.0.tar.bz2)
-- Download [LibreWolf](https://github.com/LibreWolf-Browser/LibreWolf/releases/download/LibreWolf-v2.1-v64.0.0/LibreWolf-2.1-Firefox-Linux-64.0.0.zip) zip file and extract it
+- Download the LibreWolf zip file and extract it
 - Copy the extracted LibreWolf files to the newly downloaded `firefox` directory
 - You can use directly LibreWolf by running 'firefox/firefox'
 - You can as well create a shortcut to 'firefox/firefox' to open LibreWolf easily.
@@ -184,7 +180,7 @@ Using LibreWolf simultaneously with Firefox is possible through a different prof
 ### Mac
 
 - Download and install the [last version of Firefox](https://download-installer.cdn.mozilla.net/pub/firefox/releases/64.0/mac/en-US/Firefox%2064.0.dmg)
-- Download [LibreWolf](https://github.com/LibreWolf-Browser/LibreWolf/releases/download/LibreWolf-v2.1-v64.0.0/LibreWolf-2.1-Firefox-Mac-60.4.0.zip) zip file and extract it
+- Download LibreWolf zip file and extract it
 - Locate Firefox's installation directory (`Applications/Firefox.app/Contents/Resources/` or `Applications/Tor Browser.app/Contents/Resources/`)
 - Copy the extracted files to the install directory
 
@@ -259,11 +255,11 @@ Performance tests can be done here [LVP Octane](https://intika.github.io/lvp-oct
 
 ## About
 
-**License:** [Mozilla Public License 2.0](https://github.com/LibreWolf-Browser/LibreWolf/blob/master/License.txt)
+**License:** [Mozilla Public License 2.0](https://gitlab.com/librewolf-community/librewolf/blob/master/LICENSE)
 
 **Inspired from:** [ungoogled-chromium](https://github.com/Eloston/ungoogled-chromium)
 
-**Based on:** [Librefox](https://github.com/Librefox/Librefox), whose development seems to have halted.
+**Based on:** [Librefox](https://github.com/intika/Librefox), whose development seems to have halted.
 
 **Acknowledgement**, special thanks to:
 
@@ -276,17 +272,7 @@ Performance tests can be done here [LVP Octane](https://intika.github.io/lvp-oct
 
 ## LibreWolf Roadmap
 
-### Objectives for future versions of LibreWolf (this may change)
-
-- Develop an all-in-one LibreWolf addon to rule them all ? (Normal & Tor Version… this would simplify LibreWolf)
-- Develop an easy to use firewall system for extensions (button/hosts/allow/deny/per-addon)
-- Develop an advanced settings page
-- Update checker extension (feature in the full extension ?)
-- Advertisement for the project to reach more users ?
-
-### Todo for future versions of LibreWolf (this may change)
-
-- Listed under [issues](https://github.com/LibreWolf-Browser/LibreWolf/issues/) section
+See https://gitlab.com/librewolf-community/librewolf/issues
 
 ## Settings Index
 
@@ -365,7 +351,7 @@ Usage: If not on windows install [PowerShell](https://github.com/PowerShell/Powe
 
 ## LibreWolf Dark Theme
 
-LibreWolf provides a classic dark theme extension ([LibreWolf Dark Theme](https://addons.mozilla.org/en-US/firefox/addon/LibreWolf-dark-theme/)) but also a purified version of ShadowFox available under [dark-theme directory](https://github.com/LibreWolf-Browser/LibreWolf/tree/master/dark-theme) to install it just copy the directory chrome to your LibreWolf profile directory and then restart LibreWolf, this will expand the dark theme to internal pages like settings pages.
+LibreWolf provides a classic dark theme extension ([LibreWolf Dark Theme](https://addons.mozilla.org/en-US/firefox/addon/LibreWolf-dark-theme/)).
 
 ## Tuning LibreWolf
 
