@@ -23,11 +23,13 @@ flatpak install -y flathub $_FLATHUB_PACKAGES_TO_INSTALL;
 
 # Extracts the binary tarball
 printf "\nExtracting librewolf binary tarball\n";
+mkdir -p $_EXTRACTED_BINARY_TARBALL_FOLDER;
 tar -xvf $BINARY_TARBALL -C $_EXTRACTED_BINARY_TARBALL_FOLDER;
 
 # Prepare for flatpak build
 printf "\nPreparing files for flatpak build\n";
-mkdir $_FLATPAK_BUILD_SOURCE_FOLDER && mv $_EXTRACTED_BINARY_TARBALL_FOLDER $_FLATPAK_BUILD_SOURCE_FOLDER/librewolf;
+mkdir -p $_FLATPAK_BUILD_SOURCE_FOLDER;
+mv $_EXTRACTED_BINARY_TARBALL_FOLDER $_FLATPAK_BUILD_SOURCE_FOLDER;
 
 # Build Repo
 printf "\nBuilding flatpak repository\n";

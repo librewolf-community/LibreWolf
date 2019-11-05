@@ -1,4 +1,4 @@
-image: ubuntu:18.04
+image: ubuntu:18.10
 
 variables:
     BINARY_TARBALL: "$CI_PROJECT_DIR/LibreWolf.tar.bz2"

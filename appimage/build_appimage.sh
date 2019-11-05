@@ -14,7 +14,7 @@ BINARY_TARBALL=$1
 APPIMAGE_FILE=$2
 _SCRIPT_FOLDER=$(realpath $(dirname $0));
 _BINARY_TARBALL_EXTRACTED_FOLDER=$_SCRIPT_FOLDER/librewolf;
-_BUILD_APPIMAGE_FILE=$_SCRIPT_FOLDER/LibreWolf*.AppImage;
+_BUILD_APPIMAGE_FILE=$_SCRIPT_FOLDER/LibreWolf.AppImage;
 _APPIMAGETOOL_DOWNLOAD_URL=https://github.com/AppImage/AppImageKit/releases/latest/download/appimagetool-x86_64.AppImage;
 _APPIMAGETOOL_EXTRACTED_FOLDER=$_SCRIPT_FOLDER/squashfs-root;
 _APPIMAGETOOL_FILE=$_SCRIPT_FOLDER/appimagetool;
@@ -40,7 +40,8 @@ chmod +x $_APPIMAGETOOL_FILE;
 
 # Generate AppImage
 printf "\nGenerating AppImage\n";
-ARCH=x86_64 $_APPIMAGETOOL_FILE --appimage-extract-and-run $_BINARY_TARBALL_EXTRACTED_FOLDER;
+ARCH=x86_64 $_APPIMAGETOOL_FILE --appimage-extract-and-run\
+  $_BINARY_TARBALL_EXTRACTED_FOLDER $_BUILD_APPIMAGE_FILE;
 chmod +x $_BUILD_APPIMAGE_FILE; 
 
 # Move AppImage to specified location
