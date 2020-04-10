@@ -7,7 +7,7 @@ pkgname=librewolf
 _pkgname=LibreWolf
 # how to get ci vars instead?
 pkgver=75.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Community-maintained fork of Firefox, focused on privacy, security and freedom."
 arch=(x86_64 aarch64)
 license=(MPL GPL LGPL)
@@ -26,11 +26,13 @@ options=(!emptydirs !makeflags !strip)
 source=(https://archive.mozilla.org/pub/firefox/releases/$pkgver/source/firefox-$pkgver.source.tar.xz
         $pkgname.desktop
         "git+https://gitlab.com/${pkgname}-community/browser/common.git"
-        "git+https://gitlab.com/${pkgname}-community/settings.git")
+        "git+https://gitlab.com/${pkgname}-community/settings.git"
+        "remove_addons.patch")
 sha256sums=('bbb1054d8f2717c634480556d3753a8483986af7360e023bb6232df80b746b0f'
             '0471d32366c6f415f7608b438ddeb10e2f998498c389217cdd6cc52e8249996b'
             'SKIP'
-            'SKIP')
+            'SKIP'
+            '70fab85453130a84fd2a1865f1cea660f848f394d689cd744b141927359a5937')
 
 if [[ $CARCH == 'aarch64' ]]; then
   source+=(arm.patch
@@ -123,6 +125,9 @@ else
 ac_add_options --enable-optimize
 END
 fi
+
+  # Remove some pre-installed addons that might be questionable
+  patch -p1 -i ../remove_addons.patch
 
   # Disabling Pocket
   sed -i "s/'pocket'/#'pocket'/g" browser/components/moz.build
@@ -275,12 +280,6 @@ END
 #!/bin/sh
 exec /usr/lib/$pkgname/librewolf "\$@"
 END
-
-  # Remove some pre-installed addons that might be questionable
-  rm -f "$pkgdir/usr/lib/$pkgname/browser/features/doh-rollout@mozilla.org.xpi"
-  rm -f "$pkgdir/usr/lib/$pkgname/browser/features/screenshots@mozilla.org.xpi"
-  rm -f "$pkgdir/usr/lib/$pkgname/browser/features/webcompat-reporter@mozilla.org.xpi"
-  rm -f "$pkgdir/usr/lib/$pkgname/browser/features/webcompat@mozilla.org.xpi"
 
   # Replace duplicate binary with wrapper
   # https://bugzilla.mozilla.org/show_bug.cgi?id=658850

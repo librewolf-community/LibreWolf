@@ -36,13 +36,6 @@ cp -r $_EXTRACTED_TARBALL_FOLDER/settings/* $_EXTRACTED_TARBALL_FOLDER;
 # Add distribution.ini
 distini="$_EXTRACTED_TARBALL_FOLDER/distribution/distribution.ini"
 
-# Remove some pre-installed addons that might be questionable
-rm -f "$_EXTRACTED_TARBALL_FOLDER/browser/features/doh-rollout@mozilla.org.xpi"
-rm -f "$_EXTRACTED_TARBALL_FOLDER/browser/features/screenshots@mozilla.org.xpi"
-rm -f "$_EXTRACTED_TARBALL_FOLDER/browser/features/webcompat-reporter@mozilla.org.xpi"
-rm -f "$_EXTRACTED_TARBALL_FOLDER/browser/features/webcompat@mozilla.org.xpi"
-
-
 install -Dvm644 /dev/stdin "$distini" <<END
 [Global]
 id=io.gitlab.LibreWolf
