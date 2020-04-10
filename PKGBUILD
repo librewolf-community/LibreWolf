@@ -276,6 +276,12 @@ END
 exec /usr/lib/$pkgname/librewolf "\$@"
 END
 
+  # Remove some pre-installed addons that might be questionable
+  rm -f "$pkgdir/usr/lib/$pkgname/browser/features/doh-rollout@mozilla.org.xpi"
+  rm -f "$pkgdir/usr/lib/$pkgname/browser/features/screenshots@mozilla.org.xpi"
+  rm -f "$pkgdir/usr/lib/$pkgname/browser/features/webcompat-reporter@mozilla.org.xpi"
+  rm -f "$pkgdir/usr/lib/$pkgname/browser/features/webcompat@mozilla.org.xpi"
+
   # Replace duplicate binary with wrapper
   # https://bugzilla.mozilla.org/show_bug.cgi?id=658850
   ln -srfv "$pkgdir/usr/bin/$pkgname" "$pkgdir/usr/lib/$pkgname/librewolf-bin"
