@@ -32,7 +32,7 @@ sha256sums=('bbb1054d8f2717c634480556d3753a8483986af7360e023bb6232df80b746b0f'
             '0471d32366c6f415f7608b438ddeb10e2f998498c389217cdd6cc52e8249996b'
             'SKIP'
             'SKIP'
-            '70fab85453130a84fd2a1865f1cea660f848f394d689cd744b141927359a5937')
+            '24b75ba55cb4a2c9a088a22279a1f07fd3b8f3ef4f47774c0c12b79f4bfad124')
 
 if [[ $CARCH == 'aarch64' ]]; then
   source+=(arm.patch
