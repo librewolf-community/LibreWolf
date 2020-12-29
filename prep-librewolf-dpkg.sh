@@ -1,7 +1,7 @@
 #!/bin/sh
 # File: prep-librewolf-dpkg.sh
 # Location: https://gitlab.com/bgstack15/librewolf-linux.git
-# Latest supported version: librewolf-83.0-1
+# Latest supported version: librewolf-84.0-3
 # Author: bgstack15
 # SPDX-License-Identifier: CC-BY-SA-4.0
 # Startdate: 2020-11-29
@@ -199,7 +199,7 @@ sed -i -e '/%if browser/,+2s/firefox/librewolf/' \
 new_changelog="$( mktemp )"
 {
    cat <<EOF
-librewolf (83.0-1) unstable; urgency=low
+librewolf (${debian_firefox_version}) unstable; urgency=low
 
   * Fork to librewolf release
 
