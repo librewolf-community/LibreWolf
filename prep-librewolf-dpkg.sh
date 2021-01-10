@@ -32,7 +32,7 @@ test ! -r "${librewolf_dpkg_conf}" && { echo "Unable to load config file, which 
 #   1. orig tarball, which in Debian is not always the pristine contents from upstream source
 #   2. debian/ directory which defines how to build a package for Debian
 #   3. Debian source package control file
-cd "${work_dir}"
+mkdir -p "${work_dir}" ; cd "${work_dir}"
 test -z "${SKIP_DOWNLOAD}" && {
    wget --content-disposition http://deb.debian.org/debian/pool/main/f/firefox/firefox_"${firefox_version}".orig.tar.xz # -O librewolf_"${firefox_version}".orig.tar.xz
    wget --content-disposition http://deb.debian.org/debian/pool/main/f/firefox/firefox_"${debian_firefox_version}".debian.tar.xz # -O librewolf_"${debian_firefox_version}".debian.tar.xz
