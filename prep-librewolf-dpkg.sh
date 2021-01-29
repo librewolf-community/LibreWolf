@@ -1,7 +1,7 @@
 #!/bin/sh
 # File: prep-librewolf-dpkg.sh
 # Location: https://gitlab.com/bgstack15/librewolf-linux.git
-# Latest supported version: librewolf-84.0-3
+# Latest supported version: librewolf-84.0.2-2
 # Author: bgstack15
 # SPDX-License-Identifier: CC-BY-SA-4.0
 # Startdate: 2020-11-29
@@ -194,6 +194,16 @@ sed -i -r -e '2{
 sed -i -e '/%if browser/,+2s/firefox/librewolf/' \
    -e '/%if CRASH_REPORTER/s/CRASH_REPORTER/CRASH_REPORTER_ENABLED/' \
    "${debian_dir}"/browser.install.in
+
+# instruct dpkg to include the librewolf settings
+rm -rf "${debian_dir}"/librewolf_settings
+cp -pr "${git_source_dir}"/settings "${debian_dir}"/librewolf_settings
+rm -rf "${debian_dir}"/librewolf_settings/.git*
+cat <<EOF >> "${debian_dir}"/browser.install.in
+librewolf_settings/librewolf.cfg usr/lib/@browser@
+librewolf_settings/defaults usr/lib/@browser@
+librewolf_settings/distribution usr/lib/@browser@
+EOF
 
 # add changelog contents for LibreWolf
 new_changelog="$( mktemp )"
