@@ -41,7 +41,7 @@ ac_add_options --enable-update-channel=release
 ac_add_options --with-app-name=librewolf
 ac_add_options --with-app-basename=LibreWolf
 ac_add_options --with-branding=browser/branding/librewolf
-ac_add_options --with-distribution-id=io.gitlab.librewolf
+ac_add_options --with-distribution-id=io.gitlab.librewolf-community
 ac_add_options --with-unsigned-addon-scopes=app,system
 ac_add_options --allow-addon-sideload
 export MOZ_REQUIRE_SIGNING=0
@@ -117,6 +117,9 @@ patch -p1 -i "${CI_PROJECT_DIR}/deb_patches/armhf-reduce-linker-memory-use.patch
 patch -p1 -i "${CI_PROJECT_DIR}/deb_patches/build-with-libstdc++-7.patch"
 patch -p1 -i "${CI_PROJECT_DIR}/deb_patches/fix-armhf-webrtc-build.patch"
 patch -p1 -i "${CI_PROJECT_DIR}/deb_patches/webrtc-fix-compiler-flags-for-armhf.patch"
+patch -p1 -i "${CI_PROJECT_DIR}/deb_patches/reduce-rust-debuginfo.patch"
+patch -p1 -i "${CI_PROJECT_DIR}/deb_patches/relax-cargo-dep.patch"
+patch -p1 -i "${CI_PROJECT_DIR}/deb_patches/use-system-icupkg.patch"
 patch -p1 -i "${CI_PROJECT_DIR}/deb_patches/python3-remove-variable-annotations.patch"
 patch -p1 -i "${CI_PROJECT_DIR}/deb_patches/python3-remove-fstrings.patch"
 patch -p1 -i "${CI_PROJECT_DIR}/deb_patches/python3-remove-pep487.patch"
@@ -129,6 +132,11 @@ patch -p1 -i ${CI_PROJECT_DIR}/remove_addons.patch
 # Disable (some) megabar functionality
 # Adapted from https://github.com/WesleyBranton/userChrome.css-Customizations
 patch -p1 -i ${CI_PROJECT_DIR}/megabar.patch
+
+# Debian patch to enable global menubar
+if [[ ! -z "${GLOBAL_MENUBAR}" ]];then
+  patch -p1 -i ${CI_PROJECT_DIR}/unity-menubar.patch
+fi
 
 # Disabling Pocket
 printf "\nDisabling Pocket\n";
@@ -145,3 +153,10 @@ sed -z "$_cert_sed" -i toolkit/mozapps/extensions/internal/XPIInstall.jsm
 
 # allow SearchEngines option in non-ESR builds
 sed -i 's#"enterprise_only": true,#"enterprise_only": false,#g' browser/components/enterprisepolicies/schemas/policies-schema.json
+
+# stop some undesired requests (https://gitlab.com/librewolf-community/browser/common/-/issues/10)
+_settings_services_sed='s#firefox.settings.services.mozilla.com#f.s.s.m.c.qjz9zk#g'
+sed "$_settings_services_sed" -i browser/components/newtab/data/content/activity-stream.bundle.js
+sed "$_settings_services_sed" -i modules/libpref/init/all.js
+sed "$_settings_services_sed" -i services/settings/Utils.jsm
+sed "$_settings_services_sed" -i toolkit/components/search/SearchUtils.jsm

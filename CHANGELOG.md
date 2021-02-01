@@ -7,6 +7,54 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project follows the official Firefox releases, but also uses
 [Arch Linux Package Versioning](https://wiki.archlinux.org/index.php/Arch_package_guidelines#Package_versioning) to mark individual releases in between versions.
 
+## [85.0-1] – 2021-01-31
+
+### Changed
+
+- New upstream release 85.0
+- Global menubar patch removed from default releases. Separate releases will be made available.
+- `dom.event.contextmenu.enabled` is now an unlocked preference
+
+### Fixed
+
+- Non-Arch releases should now also have some additional startup requests removed
+
+## [84.0.2-2] - 2021-01-20
+
+### Fixed
+
+- AppImage and Flatpak releases were not using the most recent settings.
+
+## [84.0.2-1] - 2021-01-08
+
+### Changed
+
+- New upstream release 84.0.1
+- Flatpak runtime version updated (thanks @TheEvilSkeleton)
+
+### Fixed
+
+- Use patch for global menubar added to AppImage and Flatpak build script as well
+
+## [84.0.1-1] - 2021-01-07
+
+### Fixed
+
+- Flatpak now properly provides a .desktop-file (and some other small improvements)
+- Fixed AppImage crashes when `XDG_DATA_DIRS` is unset (fixes #139)
+
+### Changed
+
+- New upstream release 84.0.1
+- New upstream release of included uBlock Origin (1.32.4)
+- More options kept unlocked to remain easier to modify
+- "Wayland first" Flatpak with (hopefully) clean X11-fallback
+
+### Added
+
+- Included Debian patch for global menubar
+- HTTPS only mode enabled by default
+
 ## [84.0-1] - 2020-12-25
 
 ### Changed

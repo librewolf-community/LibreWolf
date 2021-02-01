@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=LibreWolf
 Exec=librewolf %u
-Icon=librewolf
+Icon=io.gitlab.LibreWolf
 Type=Application
 MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;application/x-xpinstall;application/pdf;application/json;
 StartupWMClass=LibreWolf
