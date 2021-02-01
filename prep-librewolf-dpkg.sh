@@ -200,9 +200,9 @@ rm -rf "${debian_dir}"/librewolf_settings
 cp -pr "${git_source_dir}"/settings "${debian_dir}"/librewolf_settings
 rm -rf "${debian_dir}"/librewolf_settings/.git*
 cat <<EOF >> "${debian_dir}"/browser.install.in
-librewolf_settings/librewolf.cfg usr/lib/@browser@
-librewolf_settings/defaults usr/lib/@browser@
-librewolf_settings/distribution usr/lib/@browser@
+debian/librewolf_settings/librewolf.cfg usr/lib/@browser@
+debian/librewolf_settings/defaults usr/lib/@browser@
+debian/librewolf_settings/distribution usr/lib/@browser@
 EOF
 
 # add changelog contents for LibreWolf
